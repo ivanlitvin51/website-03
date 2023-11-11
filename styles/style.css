@@ -325,12 +325,11 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
-
 .banner-info::before {
     content: '';
     width: 194px;
+    background: url("icons/Other/cube.svg");
     aspect-ratio: 1;
-    background: url('/icons/d_cube_scan_icon_257072.svg') center/contain no-repeat;
     filter: brightness(100);
     margin-right: 30px;
 }

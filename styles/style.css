@@ -330,7 +330,7 @@ h1, h2, h3, h4, h5, h6 {
     content: '';
     width: 194px;
     aspect-ratio: 1;
-    background: url('/icons/Other/d_cube_scan_icon_257072.svg') center/contain no-repeat;
+    background: url('/icons/d_cube_scan_icon_257072.svg') center/contain no-repeat;
     filter: brightness(100);
     margin-right: 30px;
 }

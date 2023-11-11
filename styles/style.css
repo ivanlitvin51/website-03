@@ -223,7 +223,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header-logo {
-    flex-shrink: 0;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-decoration: transparent;
+    color: var(--color-light);
 }
 
 .header-menu-list {
@@ -318,6 +323,16 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 30px;
     line-height: 1.27;
     font-weight: 700;
+}
+
+
+.banner-info::before {
+    content: '';
+    width: 194px;
+    aspect-ratio: 1;
+    background: url('/icons/Other/d_cube_scan_icon_257072.svg') center/contain no-repeat;
+    filter: brightness(100);
+    margin-right: 30px;
 }
 
 .banner-title {

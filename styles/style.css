@@ -141,6 +141,7 @@ html {
 
 :root {
     --color-dark: #000000;
+    --color-dark-alternate: #131619;
     --color-light: #FFFFFF;
     --color-dark-gray: #404040;
     --color-light-gray: #C4C4C4;
@@ -208,6 +209,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header {
+    background-color: var(--color-dark-alternate);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -247,7 +249,7 @@ h1, h2, h3, h4, h5, h6 {
 .header-menu-link.is-current::after {
     content: "";
     width: 5px;
-    height: 5px;
+    aspect-ratio: 1;
     background-color: currentColor;
     border-radius: 50%;
 }
@@ -262,11 +264,11 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     justify-content: center;
     width: 40px;
-    height: 40px;
+    aspect-ratio: 1;
     color: var(--color-light);
     background-color: transparent;
     border: var(--border);
-    border-radius: var(--border-radius);
+    border-radius: 50%;
     row-gap: 4px;
 }
 
@@ -277,10 +279,51 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header-burger-button-line {
-
     width: 26px;
     height: 1px;
     background-color: currentColor;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    aspect-ratio: 1;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    min-height: 985px;
+    padding: 36px 70px;
+    color: var(--color-light);
+    background-color: var(--color-dark);
+}
+
+.banner-body {
+    /**text-transform: uppercase;*/
+}
+
+.banner-info {
+    display: flex;
+    align-items: end;
+    font-size: 30px;
+    line-height: 1.27;
+    font-weight: 700;
+}
+
+.banner-title {
+    font-size: 200px;
+    font-weight: 700;
+    line-height: 1;
 }
 
 @media (max-width: 1024px) {

@@ -365,7 +365,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .banner-pagination-button::after {
     content: '';
-    width: 10px;
+    width: min(1vw, 10px);
     aspect-ratio: 1;
     border: var(--border);
     border-radius: 50%;
@@ -391,7 +391,7 @@ h1, h2, h3, h4, h5, h6 {
     .header-menu-link {
         height: 50px;
     }
-    
+
     .header,
     .banner {
         padding-inline: 15px;

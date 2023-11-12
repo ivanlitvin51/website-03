@@ -230,7 +230,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     font-size: 40px;
     letter-spacing: 3px;
-    text-decoration: transparent;
+    text-decoration: none;
     color: var(--color-light);
 }
 
@@ -385,6 +385,10 @@ h1, h2, h3, h4, h5, h6 {
 .banner-pagination-button:not(.is-current):hover::after {
     border-color: var(--color-light-gray);
 }
+
+/*.test-div {
+    margin-top: 2000px;
+}*/
 
 @media (max-width: 1126px) {
     .header {

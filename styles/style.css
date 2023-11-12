@@ -283,7 +283,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header-burger-image {
-    width: clamp(10px, 2.4vw, 46px);
+    width: clamp(40px, 2.4vw, 46px);
     aspect-ratio: 1;
     filter: invert(98%) sepia(4%) saturate(343%) hue-rotate(266deg) brightness(115%) contrast(93%);
     position: relative;

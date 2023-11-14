@@ -157,7 +157,7 @@ html {
     --container-width: 1300px;
     --container-padding-x: 15px;
 
-    --transition-duration: 0.2s;
+    --transition-duration: 0.4s;
 
     --header-height: 90px;
 
@@ -177,7 +177,7 @@ a {
 
 a:hover {
     color: var(--color-light-gray);
-
+    transition-duration: var(--transition-duration);
 }
 
 p {
@@ -282,7 +282,9 @@ h1, h2, h3, h4, h5, h6 {
 .bio-card-button:hover {
     color: var(--color-dark);
     background-color: var(--color-light-gray);
+    transition-duration: 1s;
 }
+
 
 /*.bio-card-button::after {*/
 /*    content: '';*/

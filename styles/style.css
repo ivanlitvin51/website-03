@@ -160,6 +160,7 @@ html {
     --transition-duration: 0.2s;
 
     --header-height: 90px;
+
 }
 
 a,
@@ -187,8 +188,44 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
+
+.titile-medium {
+    font-size: 40px;
+    line-height: 1.3;
+    color: var(--color-light)
+}
+
+.backdrop-title {
+    position: relative;
+    z-index: 2;
+}
+
+/*.backdrop-title::before {*/
+/*    content: '';*/
+/*    display: block;*/
+/*    position: absolute;*/
+/*    right: calc(100% + 8px);*/
+/*    filter: invert(98%) sepia(4%) saturate(343%) hue-rotate(266deg) brightness(115%) contrast(93%);*/
+/*    width: 26px;*/
+/*    aspect-ratio: 1;*/
+/*    background: url('icons/Other/plus.svg');*/
+/*}*/
+
+.backdrop-title::after {
+    content: attr(data-title);
+    position: absolute;
+    z-index: -1;
+    top: -1.1em;
+    left: -0.55em;
+    font-family: var(--font-family-accent);
+    color: transparent;
+    font-size: 2.8em;
+    -webkit-text-stroke: 1px var(--color-light-gray);
+    text-stroke: 1px var(--color-light-gray);
+}
+
 
 .button {
     display: inline-flex;
@@ -400,9 +437,28 @@ h1, h2, h3, h4, h5, h6 {
     border-color: var(--color-light-gray);
 }
 
-/*.test-div {
-    margin-top: 2000px;
-}*/
+.bio-item:nth-child(even) {
+    background-color: var(--color-dark-alternate);
+}
+
+.bio-item:nth-child(even) .bio-card {
+    flex-direction: row-reverse;
+}
+
+.bio-card {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: clamp(30px, 10.42vw, 200px);
+}
+
+.bio-card-image {
+    margin-block: -60px;
+}
+
+.bio-card-body {
+    padding-left: 35px;
+}
 
 @media (max-width: 1138px) {
     .header {

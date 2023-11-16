@@ -45,6 +45,6 @@ testPromise.then(res => res = "Oh "+res).then(res => alert(res));*/
 // }
 //
 // fetchAsync();
-
+// test
 
 
